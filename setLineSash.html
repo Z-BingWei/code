@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <canvas></canvas>
+    <script>
+        var canvas = document.querySelector('canvas');
+            canvas.width = 600;
+            canvas.height = 600;
+            canvas.style.border = '2px solid red';
+        var context = canvas.getContext('2d');
+        context.lineWidth = 3;
+        context.strokeStyle = 'red';
+        context.moveTo(100,100);
+        context.lineTo(500,100);
+        context.setLineDash([3,10,5]);
+        context.stroke();
+    
+    
+    </script>
+</body>
+</html>
